@@ -13,6 +13,8 @@ var replace = require("replace-in-file");
 var banner = [
   "surveyjs - Survey JavaScript library v" + packageJson.version,
   "Copyright (c) 2015-2020 Devsoft Baltic OÜ  - http://surveyjs.io/",
+  "------",
+  "Github: https://github.com/KnowledgeLakegithub/survey-library",
   "License: MIT (http://www.opensource.org/licenses/mit-license.php)"
 ].join("\n");
 
@@ -20,6 +22,7 @@ var banner = [
 var dts_banner = [
   "Type definitions for Survey JavaScript library v" + packageJson.version,
   "Copyright (c) 2015-2020 Devsoft Baltic OÜ  - http://surveyjs.io/",
+  "Github: https://github.com/KnowledgeLakegithub/survey-library",
   "Definitions by: Devsoft Baltic OÜ <https://github.com/surveyjs/>",
   ""
 ].join("\n");
@@ -50,9 +53,9 @@ var platformOptions = {
     externals: {
       knockout: {
         root: "ko",
-        commonjs2: "knockout",
-        commonjs: "knockout",
-        amd: "knockout"
+        commonjs2: "knockout_3_5_1",
+        commonjs: "knockout_3_5_1",
+        amd: "knockout_3_5_1"
       }
     },
     keywords: ["knockout"],
